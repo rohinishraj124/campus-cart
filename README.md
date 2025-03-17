@@ -1,4 +1,4 @@
-# 🛒 Grocery Store - Seller & User Dashboard  
+# 🛒 CampusCart
 
 This project provides a **complete grocery store platform** with both **seller and user phases**.  
 - **Sellers** can manage inventory, track orders, and add products.  
