@@ -108,7 +108,7 @@ const Login = ({ theme }) => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-lg focus:ring-pink-500 focus:border-pink-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:ring-pink-400 dark:focus:border-pink-400"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-lg focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:ring-indigo-400 dark:focus:border-indigo-400"
               placeholder="Enter your email"
             />
           </div>
@@ -121,7 +121,7 @@ const Login = ({ theme }) => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="w-full px-4 py-2 mt-1 text-sm border rounded-lg focus:ring-pink-500 focus:border-pink-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:ring-pink-400 dark:focus:border-pink-400"
+              className="w-full px-4 py-2 mt-1 text-sm border rounded-lg focus:ring-indigo-500 focus:border-indigo-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:ring-indigo-400 dark:focus:border-indigo-400"
               placeholder="Enter your password"
             />
             <button type="button" onClick={() => setPasswordVisible(!passwordVisible)} className="absolute right-3 top-1/2 transform -translate-y-1/2 mt-3">
@@ -139,7 +139,7 @@ const Login = ({ theme }) => {
                   value="user"
                   checked={userType === 'user'}
                   onChange={() => setUserType('user')}
-                  className="text-pink-500 focus:ring-pink-500"
+                  className="text-indigo-500 focus:ring-indigo-500"
                 />
                 <span className="text-sm text-gray-900 dark:text-gray-300">User</span>
               </label>
@@ -149,7 +149,7 @@ const Login = ({ theme }) => {
                   value="seller"
                   checked={userType === 'seller'}
                   onChange={() => setUserType('seller')}
-                  className="text-pink-500 focus:ring-pink-500"
+                  className="text-indigo-500 focus:ring-indigo-500"
                 />
                 <span className="text-sm text-gray-900 dark:text-gray-300">Seller</span>
               </label>
@@ -158,19 +158,19 @@ const Login = ({ theme }) => {
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <input id="remember" type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} className="w-4 h-4 text-pink-500 border-gray-300 rounded focus:ring-pink-500" />
+              <input id="remember" type="checkbox" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} className="w-4 h-4 text-indigo-500 border-gray-300 rounded focus:ring-indigo-500" />
               <label htmlFor="remember" className="ml-2 text-sm text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
-            <Link href="/forget" className="text-sm text-pink-500 hover:underline">Forgot password?</Link>
+            <Link href="/forget" className="text-sm text-indigo-500 hover:underline">Forgot password?</Link>
           </div>
 
-          <button type="submit" className={`w-full px-4 py-2 text-sm font-medium text-white bg-pink-500 rounded-lg hover:bg-pink-600 focus:outline-none ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={loading}>
+          <button type="submit" className={`w-full px-4 py-2 text-sm font-medium text-white bg-indigo-500 rounded-lg hover:bg-indigo-600 focus:outline-none ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={loading}>
             {loading ? 'Logging in...' : 'Login'}
           </button>
         </form>
 
         <p className="text-sm text-center text-gray-900 dark:text-gray-300">
-          Don't have an account? <Link href="/signup" className="text-pink-500 hover:underline">Sign up</Link>
+          Don't have an account? <Link href="/signup" className="text-indigo-500 hover:underline">Sign up</Link>
         </p>
       </div>
     </div>
